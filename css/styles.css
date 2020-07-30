@@ -1,0 +1,74 @@
+
+
+/* GOOGLE Web Fonts-------- */
+
+
+
+/* ------Basic Layouts-------- */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+.image {
+    max-width: 100%;
+
+
+}
+
+.banner,
+.container {
+    text-align: center;
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.main-nav {
+    display: block;
+    text-align: center;
+    background-color: #65c9ff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-nav li{
+    background-color: white ;
+    color: white;
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+ul {
+    padding: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/*----------- Cell Phone----------- */
+@media (max-width: 768px) {
+
+
+}
+
+
+/*----------- Tablet----------- */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+
+}
+
+
+/*----------- Computer-----------*/
+@media (min-width: 1024px) {
+
+
+}
