@@ -1,74 +1,170 @@
-
-
-/* GOOGLE Web Fonts-------- */
-
-
-
-/* ------Basic Layouts-------- */
 * {
     box-sizing: border-box;
-
+    list-style-type: none;
+    letter-spacing: 1.5px;
+    font-size: 1.075em;
+    overflow: auto;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-
-}
-.image {
-    max-width: 100%;
-
-
-}
-
-.banner,
-.container {
+    font-family: 'Roboto Slab', serif; /* ---------- Google font -------- */
+    text-decoration: none;
     text-align: center;
-    display: inline-block;
-    padding-top: 50px;
-    padding-bottom: 50px;
     
 }
 
-.main-nav {
-    display: block;
-    text-align: center;
-    background-color: #65c9ff;
-    margin-top: 5px;
-    margin-bottom: 5px;
+p {
+
+    margin-bottom: 1.5em;
+    margin-top: 1em;
 }
 
-.main-nav li{
-    background-color: white ;
-    color: white;
-    list-style-type: none;
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
-    margin: 10px;
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+a {
+    text-decoration: none;
+    
+}
+
+img {
+    max-width: 100%;
 }
 
 ul {
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
 }
 
-/* MEDIA QUERIES */
-
-/*----------- Cell Phone----------- */
-@media (max-width: 768px) {
-
-
+.contact p {
+    margin: 20px;
 }
 
+
+.deskfoot,
+.cellfoot,
+.main-nav {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+
+}
+.deskfoot,
+.cellfoot,
+.banner {
+    background-color: grey;
+    color:white;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+header {
+    background-color: grey;  
+}
+
+.deskfoot ul a,
+.cellfoot ul a,
+.main-nav ul a{
+    background-color: white;
+    color: gray;
+    display: inline-block;
+ 
+    width: 100%
+}
+
+.deskfoot {
+    display: none;
+    visibility: hidden;
+  }
+
+
+/* -----------MEDIA QUERIES -----------*/
 
 /*----------- Tablet----------- */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px)  {
 
+    
+    .wrapper {
+        text-align: center;
+        margin:0 auto;
+    }
+   
+    .main-nav li {
+        display: inline-block;
+        text-align: center;
+    }
+    .profile {
+        float: right;
+        overflow: auto;
+        height: auto;
+        padding-right: 10%;
+        text-align: left;    
+    }
+
+
+    .page {
+        float: left;
+        width: 50%;
+        padding: 15px;
+    }
+    .profile-text{
+
+        width: 50%;
+        padding-left:10%
+    }
+
+
+    .cellfoot { display: none !important; }    /*----------Footer change  -------------- */
+    .deskfoot  { display: block; visibility: visible; }
 
 }
-
-
-/*----------- Computer-----------*/
+/*----------- Desktop -----------*/
 @media (min-width: 1024px) {
+    
+    body{
+        max-width 30%;
+        text-align: center;;
+    }
+    .main-nav li {
+        display: inline-block;
 
+    }
+    .page {
+        width: 30%;
+        padding: 15px;
+        text-align: center;
+        height: auto;
 
+    }
+    .wrapper {
+        text-align: center;
+        margin:0 auto;
+    }
+    .profile {
+        float: right;
+        overflow: auto;
+        height: auto;
+    }
+
+    .name{
+        float: left
+    }
+ 
+    .main-nav ul {
+    float: right;
+    }
+
+    .cellfoot { display: none !important; }    /*----------Footer change  -------------- */
+    .deskfoot  { display: block; visibility: visible; }
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: none;
 }
