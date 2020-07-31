@@ -20,8 +20,12 @@ p {
     margin-top: 1em;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
+a, a:visited, a:active,  {
+    color: white;
+  }
+
+  a:hover {
+    color: #36acd0;
   }
 
 a {
@@ -43,6 +47,9 @@ ul {
     margin: 20px;
 }
 
+.name {
+    font-family: 'Fredoka One', serif; /* ---------- 2nd Google font -------- */
+}
 
 .deskfoot,
 .cellfoot,
@@ -83,6 +90,17 @@ header {
     visibility: hidden;
   }
 
+  .skills ul li{
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: #36acd0;
+    width: 185px;
+    color: white;
+    margin-bottom: 100px;
+    font-family: 'Fredoka One', serif;
+  }
+
+
 
 /* -----------MEDIA QUERIES -----------*/
 
@@ -116,7 +134,6 @@ header {
         width: 50%;
         padding-left:10%
     }
-
 
     .cellfoot { display: none !important; }    /*----------Footer change  -------------- */
     .deskfoot  { display: block; visibility: visible; }
@@ -160,8 +177,6 @@ header {
     .main-nav ul {
     float: right;
     }
-
-
 
     .cellfoot { display: none !important; }    /*----------Footer change  -------------- */
     .deskfoot  { display: block; visibility: visible; }
